@@ -1,3 +1,9 @@
+:root {
+    --white: #FFFFFF;
+    --dark1: #131313;
+    --dark3: #727272;
+    --yellow: #FF900E;
+}
 
 
 
@@ -9,14 +15,153 @@
 
 
 
-
-
-
-
-
-body{
+body {
     font-family: 'Work Sans', sans-serif;
 }
+
+/*  banner styles start*/
+
+.banner-container {
+
+    background: rgba(255, 144, 14, 0.1);
+    width: 1320px;
+    height: 822px;
+}
+
+.heading-text {
+    text-align: center;
+    margin: 20px;
+    padding: 2px 250px 5px 250px;
+}
+
+
+.heading-title {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 55px;
+    font-weight: 900;
+    margin: 1px 55px;
+    padding: 1px 60px 1px 60px;
+}
+
+.heading-title>span {
+    margin: 100px;
+    /* padding: 10px 90px 1px 90px; */
+}
+
+.heading-description {
+    font-weight: 400;
+    font-size: 13px;
+    padding: 0px 20px 10px 15px;
+}
+
+
+.benner-image>img {
+    width: 1000px;
+    height: 500px;
+    margin: 5px 175px 0px 165px;
+
+}
+
+.btn-primary {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 500;
+    background: #FF900E;
+    border-radius: 8px;
+    width: 160px;
+    height: 54px;
+    border: 0;
+}
+
+/* ================= banner styles end ======================= */
+
+
+/* ==================+++++++ our future styles ++++++++================== */
+
+
+
+.future-container {
+    display: flex;
+    align-items: center;
+    margin: 1px 150px;
+    padding: 70px 35px;
+}
+
+.future-imeges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+
+}
+
+
+.future-text {
+    padding-left: 35px;
+}
+
+
+.future-title {
+    color: var(--dark1);
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.sp1 {
+    color: var(--dark3);
+
+}
+
+.sp2 {
+    color: #FF900E;
+}
+
+.future-description {
+    font-size: 13px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+/* =========================================
+article styles 
+=========================================== */
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 80px;
+    margin: 30px 90px;
+}
+
+.article-text {
+    row-gap: 50px;
+    padding: 20px 0px 0px 50px;
+}
+
+
+.article-image>img {
+    height: 582px;
+
+}
+
+
+.article-container>button {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+    width: 258px;
+    height: 109px;
+    font-weight: 700;
+    font-size: 45px;
+
+}
+
+
+
+
 
 
 
