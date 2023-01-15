@@ -285,6 +285,8 @@ some facts styles
     padding: 5px;
     border: 1px solid #e6c8a7;
     border-radius: 5px;
+    animation: sliding 1s ease-in-out 0.1s infinite
+    alternate ;
 
 }
 
