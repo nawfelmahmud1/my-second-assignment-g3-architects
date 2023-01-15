@@ -251,7 +251,8 @@ some facts styles
 ============================== */
 
 
-:hover .some-container>.box {
+
+.some-container>.box:hover  {
     border: 1px solid rgb(231, 194, 194);
     background-color: #e3b3b3;
     padding: 10px;
@@ -619,9 +620,9 @@ article start
 ================ some facts
 */
 
-:hover .some-container>.box {
+ .some-container>.box:hover {
     border: 1px solid rgb(231, 194, 194);
-    background-color: #e3b3b3;
+    background-color: #caa5a5;
     padding: 10px;
     box-shadow: 5px 5px var(--dark3);
 
