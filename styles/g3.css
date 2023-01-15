@@ -189,7 +189,7 @@ article styles
 }
 
 
-.article-text>p{
+.article-text>p {
     font-size: 12px;
     font-weight: 300;
 
@@ -213,7 +213,7 @@ article styles
 
 }
 
-.article-child-div>p{
+.article-child-div>p {
     font-size: 12px;
     font-weight: 300;
 }
@@ -285,8 +285,7 @@ some facts styles
     padding: 5px;
     border: 1px solid #e6c8a7;
     border-radius: 5px;
-    animation: sliding 1s ease-in-out 0.1s infinite
-    alternate ;
+    animation: sliding 1s ease-in-out 0.1s infinite alternate;
 
 }
 
@@ -321,7 +320,7 @@ our sponsor styles
 .our-text {
     text-align: center;
     margin: 252px 0px 5px 0px;
-   
+
 }
 
 .our-text>h2 {
@@ -342,11 +341,11 @@ our sponsor styles
     grid-template-columns: repeat(5, 1fr);
     column-gap: 52px;
     margin: 50px 150px 25px 180px;
-    color: #424242; 
+    color: #424242;
     background-color: #FFFFFF;
 }
 
-.sponsor-container img{
+.sponsor-container img {
     mix-blend-mode: luminosity;
 }
 
@@ -414,5 +413,358 @@ small comments
 /* ==================================================================================================================================================
 midia query ========================================================================================================================================== */
 
+/* =============>>>>>> 
+mobile device <<<<<<<<<<========== */
+@media only screen and (max-width:688px) {
 
-@media screen and (max-width) {}
+/* =======nav bar start ========== */
+    nav {
+        background: rgba(255, 144, 14, 0.1);
+        display: grid;
+         grid-template-rows: repeat(2,1fr);
+         row-gap: 25px;
+         margin: 50px 1500px 10px 0px; 
+        
+    }
+    .nav-bar a {
+         
+        margin : 5px 5px;
+    }
+
+
+/* =========== nav bar end ========  */
+
+
+/* ======== bannner styles start =========== */
+    
+    .heading-text {
+        text-align: center;
+        margin: 0px 500px 5px 0px;
+        padding: 0px 50px 5px 0px;
+    }
+    
+    
+    .heading-title {
+       
+        font-size: 25px;
+        font-weight: 600;
+        margin: 0px 0px;
+        padding: 0px 460px 1px 5px;
+    }
+    
+    .heading-title>span {
+        margin: 50px;
+    
+    }
+    
+    .heading-description {
+        font-weight: 400;
+        font-size: 10px;
+        padding: 0px 420px 5px 1px;
+    }
+    
+    
+    .benner-image>img {
+        width: 350px;
+        height: 300px;
+        margin: 5px 1475px 0px 5px;
+    
+    }
+    
+    .btn-primary {
+        
+        font-size: 16px;
+        font-weight: 500;  
+        width: 150px;
+        height: 40px;
+        margin: 0px 420px 0px 0px;
+       
+    }
+
+/* ============= banner styles end ============= */
+
+
+/* ============= future styles start =============== */
+
+.future-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    flex-direction: column-reverse;
+    margin: 0px 550px 0px 0px;
+    padding: 0px 1475px 0px 0px;
+}
+
+.future-imeges {
+    display: grid;
+    grid-template-columns: repeat(1, 0.5fr);  
+    gap: 10px;
+
+}
+
+
+ 
+
+
+.future-title {
+     
+    font-weight: 600;
+    font-size: 35px;
+    margin: 5px 500px 0px 0px ;
+}
+
+
+
+
+.future-description {
+    font-size: 13px;
+    padding: 5px 400px 2px 0px;
+}
+
+
+/* ===============
+article start
+===================== */
+
+
+
+.article-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 20px;
+    margin: 3px 90px 0px 0px;
+
+}
+
+ 
+.article-text>h2>hr {
+    position: absolute;
+    row-gap: -3px; 
+    background-color: #FF900E;
+    margin: 2px -5px;
+    width: 5px;
+    height: 106px;
+    border: 0;
+}
+
+.article-text>h2 {
+    margin: 2px 180px 2px -50px;
+    width: 468px;
+    height: 106px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+
+.article-text>p {
+    margin: 2px 290px 3px 0px;
+    font-size: 12px;
+    font-weight: 300;
+
+
+}
+
+.article-child-div {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    margin: 5px 0px 1px 2px;
+    padding: 5px 10px 1px 3px;
+
+
+}
+
+.article-child-div>h4 {
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+
+.article-child-div>p {
+    margin: 2px 290px 3px 0px ;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+
+.article-image>img {
+    width: 365px;
+    height: 582px;
+
+}
+
+
+.article-image>button {
+    position: relative;
+    left: 70px;
+    bottom: 100px;
+    width: 210px;
+    height: 120px;
+    font-weight: 600;
+    font-size: 35px;
+    border-radius: 5px;
+    padding: 20px 30px 25px 3px;
+
+}
+
+.article-image>button>small {
+    font-size: 16px;
+
+}
+
+
+/* 
+================ some facts
+*/
+
+:hover .some-container>.box {
+    border: 1px solid rgb(231, 194, 194);
+    background-color: #e3b3b3;
+    padding: 10px;
+    box-shadow: 5px 5px var(--dark3);
+
+}
+
+
+
+
+
+
+
+.some-text {
+    margin: 5px 20px 7px 0px;
+}
+
+
+
+.some-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 45px;
+    box-sizing: border-box;
+    margin: 2px 20px 2px 0px;
+    padding: 10px;
+}
+
+.some-container>.box {
+    box-sizing: border-box;
+    padding: 5px;
+    border: 1px solid #e6c8a7;
+    border-radius: 5px;
+    animation: sliding 1s ease-in-out 0.1s infinite alternate;
+     animation-play-state: running; 
+
+}
+
+.some-container>.box>.center {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.some-container>.box>.center>h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.some-container>.box>p {
+    text-align: center;
+}
+
+/* ===============================
+our sponsors
+========================== */
+
+
+.our-text {
+    text-align: center;
+    margin: 100px 50px 5px 6px;
+
+}
+
+ 
+
+
+.our-text>p {
+    font-size: 13px;
+    padding: 5px 40px 5px 25px;
+}
+
+
+.sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 5px 150px 25px 0px;
+    color: #424242;
+    background-color: #FFFFFF;
+}
+
+.sponsor-container img {
+    mix-blend-mode: luminosity;
+    padding-bottom: 80px;
+    height: 20px;
+}
+
+/* ================
+small commaent 
+========================== */
+
+
+
+
+    .small-comment {
+        text-align: center;
+        background: #FFF4E7;
+        border-radius: 8px;
+        margin: 5px 50px 0px 0px;
+        padding: 5px 100px 5px 80px;
+        width: 190px;
+        height: 155px;
+        
+    }
+
+
+
+
+/* =====================
+footer  
+
+==============================*/
+
+
+
+
+
+    @keyframes sliding{
+        from {
+            background-color: #727272;
+            left: -1px;
+        }
+    
+        to {
+            color: #e3b3b3;
+            left: 1px;
+        }
+    
+    }
+    
+
+    .ftr-text {
+        font-size: 50px;
+        font-weight: 400;
+        width: 367px;
+        height: 150px;
+        animation:  sliding  1s ease-in-out 0.1s infinite alternate;
+        animation-play-state: running;
+        text-align:center ;
+        margin: 5px 2px 40px 0px;
+    }
+
+
+}
