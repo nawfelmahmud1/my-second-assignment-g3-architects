@@ -131,8 +131,9 @@ article styles
 .article-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 80px;
+    column-gap: 70px;
     margin: 30px 90px;
+
 }
 
 .article-text {
@@ -140,23 +141,110 @@ article styles
     padding: 20px 0px 0px 50px;
 }
 
+.article-text>h2>hr {
+    position: absolute;
+    row-gap: 15px;
 
-.article-image>img {
-    height: 582px;
+    background-color: var(--yellow);
+    margin: 2px -35px;
+    width: 2px;
+    height: 106px;
+}
+
+.article-text>h2 {
+    /* background-color: var(--yellow);
+    margin: 2px; */
+    width: 468px;
+    height: 106px;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.article-child-div {
+    margin: 25px 0px 0px 20px;
 
 }
 
 
-.article-container>button {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: -1;
-    width: 258px;
-    height: 109px;
-    font-weight: 700;
-    font-size: 45px;
 
+
+.article-image>img {
+    height: 782px;
+
+}
+
+
+.article-image>button {
+    position: relative;
+    left: -70px;
+    bottom: 100px;
+    width: 210px;
+    height: 130px;
+    font-weight: 500;
+    font-size: 40px;
+    border-radius: 5px;
+    padding: 30px 30px 70px 30px;
+
+}
+
+.article-image>button>span {
+    font-size: 16px;
+
+}
+
+
+/* ==========================
+some facts styles
+============================== */
+
+
+:hover
+    .some-container >.box {
+        border: 1px solid rgb(231, 194, 194);
+        background-color: #edd4d4;
+
+    }
+
+
+
+
+
+
+
+.some-text {
+    margin: 50px 650px 75px 100px;
+}
+
+
+ 
+.some-container  {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 45px;
+    box-sizing: border-box;
+    margin: 20px 150px 20px 250px;
+    padding: 20px;
+}
+
+.some-container>.box {
+    box-sizing: border-box;
+    padding: 25px;
+    border: 1px solid #e6c8a7;
+    border-radius: 5px;
+
+}
+
+.some-container>.box>.center {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.some-container>.box>p {
+    text-align: center;
 }
 
 
